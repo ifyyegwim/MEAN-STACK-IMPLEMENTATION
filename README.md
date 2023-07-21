@@ -45,6 +45,8 @@ MongoDB stores data in flexible, JSON-like documents. Fields in a database can v
 
     sudo systemctl status mongodb
 
+<img width="569" alt="Screenshot 2023-07-14 at 15 41 37" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/3326528d-68dc-4deb-bab6-16519a352dff">
+
 *Install npm – Node package manager*
 
     sudo apt install -y npm
