@@ -3,6 +3,8 @@ A MEAN stack is a bundle of four different software technologies that developers
 
 **STEP 1 - SET UP AN SSH AND CONNECT TO UBUNTU SERVER ON AWS VIA TERMINAL**
 
+<img width="569" alt="1" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/51abda7d-1bc6-423f-98c7-f6703cf83235">
+
 **STEP 2 - INSTALL NODEJS**
 
 Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js is used in this tutorial to set up the Express routes and AngularJS controllers.
@@ -29,25 +31,39 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
 **STEP 2- INSTALL MONGODB**
 
-MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.
+MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages. Before we can proceed with our installation, let’s update system and install the required packages:
 
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-    echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee 
-    /etc/apt/sources.list.d/mongodb-org-3.4.list
+    sudo apt update
 
-*Install MongoDB*
+*Next*
 
-    sudo apt install -y mongodb
+    sudo apt install wget curl gnupg2 software-properties-common apt-transport-https ca-certificates lsb-release
 
-*Start The server*
+*Import the MongoDB public key on Ubuntu 22.04 LTS. Run the following command to import the MongoDB public GPG Key:*
 
-    sudo service mongodb start
+    curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
 
-*Verify that the service is up and running*
+*Configure MongoDB Repo on Ubuntu 22.04 LTS. Using the following commands, add the repository to your system:*
 
-    sudo systemctl status mongodb
+    echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
 
-<img width="569" alt="Screenshot 2023-07-14 at 15 41 37" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/3326528d-68dc-4deb-bab6-16519a352dff">
+*Install MongoDB on Ubuntu 22.04 LTS*
+
+    sudo apt update
+
+*Next*
+
+    sudo apt install mongodb-org
+
+*After successful installation, start and enable MongoDB:*
+
+    sudo systemctl enable --now mongod
+
+*Check MongoDB Status:*
+
+    sudo systemctl status mongod
+
+<img width="567" alt="2" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/e07ff538-b181-44cd-ade4-955d96ae3aaf">
 
 *Install npm – Node package manager*
 
