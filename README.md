@@ -31,6 +31,8 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
 <img width="262" alt="version" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/d51e901e-cc73-4529-a1d2-0fd48cf55e07">
 
+NPM comes already packaged with Node.js. Separate NPM installation is not necessary.
+
 **STEP 2- INSTALL MONGODB**
 
 MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages. Before we can proceed with our installation, let’s update system and install the required packages:
@@ -66,10 +68,6 @@ MongoDB stores data in flexible, JSON-like documents. Fields in a database can v
     sudo systemctl status mongod
 
 <img width="567" alt="2" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/e07ff538-b181-44cd-ade4-955d96ae3aaf">
-
-*Install npm – Node package manager*
-
-    sudo apt install -y npm
 
 *Install body-parser package*
 
