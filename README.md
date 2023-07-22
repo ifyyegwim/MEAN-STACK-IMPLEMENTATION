@@ -17,13 +17,19 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
     sudo apt upgrade
 
-*Add certificates*
+*Install NodeJS*
 
-    sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+    sudo apt install nodejs -y
 
-*curl and install the Nodesource Node.js repo*   
+ *Install latest NodeSource Node.js repo (20.x at the time of attempting this project)*
 
-    curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+    curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\ sudo apt-get install -y nodejs
+
+*Confirm version*
+
+    node -v
+
+<img width="262" alt="version" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/d51e901e-cc73-4529-a1d2-0fd48cf55e07">
 
 *Install NodeJS*
 
