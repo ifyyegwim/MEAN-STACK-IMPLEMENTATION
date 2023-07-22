@@ -334,4 +334,4 @@ This is how your Web Book Register Application will look like in browser:
 
 <img width="419" alt="Screenshot 2023-07-22 at 19 17 46" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/e6e8e572-c570-49f4-a440-52d3b96a8d72">
 
-*MEAN HAS BEEN SUCCESSFULLY UTILIZED TO DEPLOY A SIMPLE BOOK REGISTER ON AWS* 🥳
+**MEAN HAS BEEN SUCCESSFULLY UTILIZED TO DEPLOY A SIMPLE BOOK REGISTER ON AWS** 🥳
