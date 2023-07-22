@@ -314,7 +314,7 @@ app.controller('myCtrl', function($scope, $http) {
 
     node server.js
 
-<img width="497" alt="165746878-4695f1d4-d419-4a9b-ba76-49728b281aa6" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/7cf948f7-e122-4127-826e-02adc33670c8">
+<img width="493" alt="server" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/6ede1791-f652-438a-8d11-7a25f546ac88">
 
 The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what curl command returns locally.
 
@@ -324,11 +324,16 @@ It shall return an HTML page, it is hardly readable in the CLI, but we can also 
 
 For this – you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
 
+<img width="1013" alt="3300" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/8846af0b-42c2-4276-88a8-1caf5e5cfdaa">
+
 Now you can access our Book Register web application from the Internet with a browser using Public IP address or Public DNS name.
 
 Quick reminder how to get your server’s Public IP and public DNS name:
 
-You can find it in your AWS web console in EC2 details
-Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP address or curl -s http://169.254.169.254/latest/meta-data/public-hostname for Public DNS name.
+You can find it in your AWS web console in EC2 details or Run ```curl -s http://169.254.169.254/latest/meta-data/public-ipv4``` for Public IP address or ```curl -s http://169.254.169.254/latest/meta-data/public-hostname``` for Public DNS name.
+
 This is how your Web Book Register Application will look like in browser:
 
+<img width="419" alt="Screenshot 2023-07-22 at 19 17 46" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/e6e8e572-c570-49f4-a440-52d3b96a8d72">
+
+MEAN HAS BEEN SUCCESSFULLY UTILIZED TO DEPLOY A SIMPLE BOOK REGISTER ON AWS 🥳
