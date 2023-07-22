@@ -31,10 +31,6 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
 <img width="262" alt="version" src="https://github.com/ifyyegwim/MEAN-STACK-IMPLEMENTATION/assets/134213051/d51e901e-cc73-4529-a1d2-0fd48cf55e07">
 
-*Install NodeJS*
-
-    sudo apt install -y nodejs
-
 **STEP 2- INSTALL MONGODB**
 
 MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages. Before we can proceed with our installation, let’s update system and install the required packages:
